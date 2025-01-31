@@ -1,0 +1,209 @@
+.hat {
+  padding: 120px 0 30px 0;
+  background: #f2a900;
+  &__inner {
+    &-title {
+      text-align: center;
+      font-size: 25px;
+      line-height: 40px;
+      font-weight: 400;
+      font-family: "Favorit Std Light";
+      letter-spacing: 2px;
+      color: #fff;
+    }
+  }
+}
+@mixin hat-lg-xlg {
+  .hat {
+  }
+}
+@mixin hat-sm-md {
+  .hat {
+    padding: 100px 0 40px 0;
+    &__inner {
+      &-title {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+.auto__container {
+  max-width: 1110px;
+  margin: 0 auto;
+  position: static;
+  padding: 0 16px;
+}
+.shop {
+  padding: 50px 0 100px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &Item {
+    width: calc(50% - 15px);
+    max-width: 450px;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__image {
+      padding-bottom: 100%;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include fullImage;
+      }
+    }
+    &__head {
+      &-title {
+        font-size: 22px;
+        font-family: "Favorit Std Light";
+        letter-spacing: 1.2px;
+        font-weight: 400;
+        color: #b94c28;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        text-align: justify;
+      }
+      &-text {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+        text-align: justify;
+        margin-top: 24px;
+        letter-spacing: 0.3px;
+        color: #b94c28;
+        margin-bottom: 20px;
+      }
+    }
+    &__foot {
+      &-price {
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 400;
+        color: #b94c28;
+      }
+      &-form {
+        display: flex;
+        width: 100%;
+        max-width: 350px;
+        border: 2px solid #b94c28;
+        button {
+          padding: 24px;
+          font-size: 18px;
+          line-height: 24px;
+          font-family: "Favorit";
+          box-sizing: border-box;
+          display: inline-block;
+          background: #f3aa00;
+          border: none;
+          outline: none;
+          color: #fff;
+          text-align: center;
+          text-transform: uppercase;
+          width: calc(100% - 110px);
+          @include transition;
+          &:hover {
+            background: #b94c28;
+          }
+        }
+      }
+      &-input {
+        width: 110px;
+        height: 100%;
+
+        input {
+          background: #e8ded9;
+          padding: 24px;
+          font-size: 30px;
+          font-weight: 500;
+          box-sizing: border-box;
+          width: 100%;
+          color: #f3aa00;
+          height: 100%;
+          font-family: "Favorit";
+          text-align: center;
+          border: none;
+          outline: none;
+          line-height: 1;
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        input[type="number"] {
+          -moz-appearance: textfield;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.faq {
+  margin-top: 40px;
+}
+@mixin shop-lg-xlg {
+  .shop {
+    &Item {
+      &__head {
+        &-title {
+          margin-bottom: 16px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@mixin shop-md-lg {
+  .shop {
+    &Item {
+      &__foot {
+        button {
+          font-size: 20px;
+          line-height: 28px;
+          width: calc(100% - 90px);
+          padding: 20px 16px;
+        }
+        &-input {
+          width: 90px;
+          input {
+            font-size: 20px;
+            line-height: 28px;
+            padding: 20px 16px;
+          }
+        }
+      }
+      &__head {
+        &-title {
+          font-size: 16px;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}
+@mixin shop-sm-md {
+  .shop {
+    padding: 40px 0 60px 0;
+    &__inner {
+      flex-direction: column;
+    }
+    &Item {
+      width: 100%;
+      max-width: unset;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

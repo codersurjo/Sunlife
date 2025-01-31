@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SUNCLIFFE: ARIZONA GIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/images/Favicon.png" />
+    <!-- Place favicon.ico in the root directory -->
+    <!-- All stylesheet and icons css  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/icofont.min.css" />
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/map.css" />
+    <script src='https://www.dwin1.com/52293.js' type='text/javascript' defer='defer'></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ZN6E60GC28"
+    ></script>
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css"
+      type="text/css"
+    />
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ZN6E60GC28");
+    </script>
+  </head>
+
+  <body>
+    <!-- preloader start here -->
+    <div class="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-icon">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- preloader ending here -->
+
+    <!-- ======= Header section start here ========= -->
+    <header class="header-section">
+      <div class="container-fluid position-relative">
+          <div class="mobile-menu d-lg-none">
+              <div class="logo">
+                  <a href="home.html"><img src="assets/images/logo/logo.svg" alt="logo" /></a>
+              </div>
+              <div class="hamburger-menu">
+                  <span class="line-top"></span>
+                  <span class="line-bottom"></span>
+              </div>
+              <nav class="mobile_menu">
+                  <div class="container-fluid">
+                      <ul>
+                          <li><a href="shop.html" class="menuLinks">Shop Bottles</a></li>
+                          <li><a href="https://suncliffe.myshopify.com/" class="menuLinks">Shop Merch</a></li>
+                          <li><a href="cocktails.html" class="menuLinks">Cocktails</a></li>
+                          <li><a href="stockist.html" class="menuLinks">Find Us</a></li>
+                          <li><a href="press.html" class="menuLinks">PRESS </a></li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+          <div class="main-menu d-none d-lg-block">
+              <div class="main-menu-wrapper justify-content-between">
+                  <div class="primary-menu">
+                      <ul class="menu">
+                        <li class="menu-item">
+                          <a href="shop.html">SHOP BOTTLES</a>
+                      </li>
+                      <li class="menu-item">
+                          <a href="https://suncliffe.myshopify.com/">SHOP MERCH</a>
+                      </li>
+                      </ul>
+                  </div>
+                  <div class="brand-logo">
+                      <a href="home.html">
+                          <img src="assets/images/logo/logo.svg" alt="Logo" />
+                      </a>
+                  </div>
+                  <div class="primary-menu">
+                      <ul class="menu">
+                        <li class="menu-item">
+                            <a href="cocktails.html">COCKTAILS</a>
+                        </li>
+                        <li class="menu-item"><a href="stockist.html">Find Us</a></li>
+                        <li class="menu-item"><a href="press.html">PRESS </a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+    <!-- ======= Header section end here ========= -->
+
+    <!-- ======= Banner section start here ========= -->
+    <section class="banner-section d-none">
+      <div class="container-fluid">
+        <div class="section-wrapper">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="banner-left stockist">
+                <h2>
+                  FIND <br />
+                  SUNCLIFFE
+                </h2>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="banner-right stockist">
+                <img
+                  src="assets/images/stockists/02.png"
+                  style="mix-blend-mode: multiply"
+                  alt="banner image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= Banner section end here ========= -->
+
+    <!-- ======= About text start  here ========= -->
+    <section class="about-text-section d-none">
+      <div class="container">
+        <div class="about-text-wrapper">
+          <p>
+            To drink Suncliffe is to choose the road less travelled, rethink
+            traditional notions of gin and discover the spirit of Sedona.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= stockist section start here ========= -->
+    <div class="stockist-section">
+      <div class="cont">
+        <div class="map-container">
+          <!-- <div class="title-section">
+					<h2 style="text-align:center;white-space:pre-wrap;">Find us here:</h2>
+				</div> -->
+
+          <div class="search">
+            <div id="geocoder"></div>
+
+            <div class="filter-section">
+              <div class="sort-section">
+                <!-- retail store or a bar/restaurant  -->
+                <div class="input-group">
+                  <input type="radio" name="category" class="category-toggler" id="retail" data-value="Retail Store">
+                  <label for="retail">Retail Store</label>
+                </div>
+
+                <div class="input-group">
+                  <input type="radio" name="category" class="category-toggler" id="bar" data-value="Bar/Restaurant">
+                  <label for="bar">Bar/Restaurant</label>
+                </div>
+              </div>
+
+              <div class="distances">
+                <select name="radius" id="radius">
+                  <option value="5">5 Miles</option>
+                  <option value="10">10 Miles</option>
+                  <option value="25">25 Miles</option>
+                  <option value="50">50 Miles</option>
+                  <option value="100">100 Miles</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <a id="downloadAnchorElem" style="display: none"></a>
+
+          <div class="map-section">
+            <div class="side-bar" id="side-bar">
+              <div
+                class="storepoint-location"
+                id="location_0"
+                data-location-tags=""
+              >
+                <div class="storepoint-name">Botanica</div>
+                <div class="storepoint-address">
+                  1620 Silver Lake Blvd<br />Los Angeles, CA 90026
+                </div>
+
+                <div class="storepoint-contact"></div>
+                <div class="storepoint-btn">
+                  <a
+                    class="storepoint-btn"
+                    rel="nofollow"
+                    target="_blank"
+                    href="http://botanicarestaurant.com"
+                    >website</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div id="map"></div>
+          </div>
+          <div class="container-fluid pt-5">
+            <div class="row">
+              <div class="col-12 ms-auto d-flex flex-column align-items-end">
+                <div class="distribution pe-5">
+                  <p class="mb-3 fs-6" style="color: #251d16">
+                    <span style="font-weight: 500">AZ Distribution:</span>
+                    Action Wine & Spirits &nbsp;&nbsp;<a
+                      href="mailto:info@actionwine.com"
+                      >info@actionwine.com</a
+                    >
+                  </p>
+                  <p class="mb-3 fs-6" style="color: #251d16">
+                    <span style="font-weight: 500">CA Distribution:</span> Rock Steady Spirits &nbsp;<a href="mailto:drinkdifferent@rocksteadyspirits.com"
+                      >drinkdifferent@rocksteadyspirits.com</a
+                    >
+                  </p>
+                  <p class="mb-0 fs-6" style="color: #251d16">
+                    <span style="font-weight: 500">NY Distribution:</span>
+                    Massanois &nbsp;<a
+                      href="mailto:bdehoog@massanois.com"
+                      >bdehoog@massanois.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= stockist section end here ========= --
+
+
+		<!-- ======= footer section start here ========= -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="assets/images/home/footer/01.svg" alt="logo" />
+          </div>
+          <div class="news-letter">
+            <form
+              action="assets/php/mailer.php"
+              method="post"
+              id="contact-form"
+            >
+              <div class="email-input">
+                <div id="form-messages"></div>
+                <input
+                  type="email"
+                  autocomplete="off"
+                  id="email"
+                  name="email"
+                  placeholder="Subscribe to Newsletter"
+                  required
+                />
+              </div>
+              <button type="submit">
+                <svg
+                  width="25"
+                  height="18"
+                  viewBox="0 0 25 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.525391 8.98047L23.5254 8.98047"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.748 0.980469L24.0218 8.98047L12.748 16.9805"
+                    stroke="white"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="social-bar">
+            <ul class="social-media justify-content-center">
+              <li class="social-item">
+                <a href="mailto:hello@suncliffegin.com"
+                  >hello@suncliffegin.com</a
+                >
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://www.instagram.com/suncliffegin/"
+                  target="_blank"
+                  ><i class="icofont-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="row align-items-end">
+            <div class="col-md-7">
+              <p>
+                Suncliffe is a woman and LGBTQ-owned and operated
+                <br class="d-md-block d-none d-lg-none" />
+                Arizona <br class="d-sm-none d-lg-block" />
+                business highlighting native botanicals and
+                <br class="d-md-block d-none d-lg-none" />
+                supporting local communities
+              </p>
+            </div>
+            <div class="col-md-5 text-md-end">
+              <p>
+                <a href="faq.html">Shipping FAQs</a>
+                <a href="privacy.html">Privacy Policy</a> © 2024 Suncliffe
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ======= footer section end here ========= -->
+
+    <!-- All Needed JS -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/turf.min.js"></script>
+    <script src="assets/js/d3.v6.js"></script>
+    <script src="assets/js/map.js"></script>
+  </body>
+</html>

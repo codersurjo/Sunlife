@@ -1,0 +1,12 @@
+// 1-main components
+@import "./components/1-main/mixin.scss";
+// 2-layout components
+@import "./components/2-layout/components.scss";
+
+// 3-pages components
+@import "./components/3-pages/landing.scss";
+@import "./components/3-pages/shop.scss";
+
+// responsive
+@import "./components/2-layout/responsive.scss";
+ 

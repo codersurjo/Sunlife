@@ -1,0 +1,211 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1110px;
+  }
+  body h1 {
+    font-size: 7.5rem;
+  }
+  body h2 {
+    font-size: 5rem;
+  }
+  body h3 {
+    font-size: 3rem;
+  }
+  body h4 {
+    font-size: 2.25rem;
+  }
+  body h5 {
+    font-size: 1.875rem;
+  }
+  body h6 {
+    font-size: 1.625rem;
+  }
+}
+@media (min-width: 992px) {
+  .banner-section .banner-left {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 991.98px) {
+  .hamburger-menu{
+    display: block;
+  }
+  .header-section {
+    padding: 15px 0;
+  }
+  .privacy_area p br, .privacy_area ul li br{
+    display: none;
+  }
+  .privacy_area p, .privacy_area ul li, .privacy_area a{
+    font-size: 18px;
+  }
+  .banner-section .banner-left{
+    height: 50vh;
+  }
+  .banner-section .banner-left h2 {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 720px;
+  }
+  body p {
+    font-size: 18px;
+  }
+  .story-section .story-img-1 {
+    max-width: 80%;
+  }
+  .story-section .shape-img {
+    top: 47%;    
+    max-width: 45%;
+  }
+  .story-section .story-content-wrapper .story-content {
+    max-width: 100%;
+  }
+  .story-section .story-content-wrapper .story-content h2:nth-of-type(1) {
+    -webkit-transform: rotate(-40deg) translate(-8%, -14%);
+    transform: rotate(-40deg) translate(-8%, -14%);
+  }
+  .banner-section .banner-right img {
+    height: auto;
+  }
+  .banner-section .banner-right {
+    height: auto;
+  }
+  .stockist-section .stor-stock-item .stock-details .stock-single {
+    width: 95%;
+  }
+}
+@media (max-width: 767.98px){
+  .story-section .story-content-wrapper .story-content {
+    max-width: 100%;
+  }
+  .story-section .story-content-wrapper .story-content h2:nth-of-type(1) {
+    transform: rotate(-49deg) translate(-6%, -100%);
+  }
+  .story-thumb {
+    max-width: 90%;
+    margin-top: 60px;
+  }
+  .story-section .shape-img {
+    top: 80%;
+    max-width: 37%;
+  }
+  .footer-section .text-md-end{
+    margin-top: 15px;
+  }
+  .story-section .story-img-1 {
+    max-width: 100%;
+  }
+}
+@media (max-width: 575.98px){
+  .hamburger-menu {
+    right: 12px;
+    top: -1px;
+  }
+  .mobile-menu .logo img {
+    max-width: 125px;
+  }
+  .mobile_menu ul li a {
+    font-size: 34px;
+  }
+  .mobile_menu {
+    padding: 100px 12px 20px;
+    position: fixed;
+  }
+  .privacy_area .title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .privacy_area {
+    background: #C26E60;
+    padding: 120px 0 75px;
+  }
+  .privacy_area h4 {
+    font-size: 16px;
+  }
+  .privacy_area p, .privacy_area ul li, .privacy_area a{
+    font-size: 14px;
+  }
+  .privacy_area ul {
+    padding-left: 10px;
+  }
+  .privacy_area ul li {
+    padding-left: 15px;
+  }
+  .privacy_area ul li::before {
+    top: 6px;
+  }
+  .privacy_area h5 {
+    font-size: 16px;
+  }
+  .news-letter form input,
+  .social-bar .social-media {
+    font-size: 15px;
+  }
+  .news-letter {
+    margin-bottom: 30px;
+  }
+  .footer-logo img{
+    max-width: 50px;
+  }
+  .footer-section .footer-top {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer-bottom {
+    padding: 0px 0 30px;
+  }
+  .footer-bottom p {
+    font-size: 15px;
+  }
+  .banner-section .banner-left h2 {
+    margin-bottom: 12px;
+  }
+  .about-text-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  body p {
+    font-size: 14px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .story-thumb {
+    max-width: 90%;
+    margin-top: 160px;
+  }
+  .story-section .shape-img {
+    top: 62%;
+    max-width: 60%;
+  }
+  .footer-bottom p {
+    font-size: 10px;
+  }
+  .discover-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .story-section .story-content-wrapper .story-content h2:nth-of-type(1) {
+    transform: rotate(-52deg) translate(-6%, -70%);
+  }
+  .discover-section .discover-wrapper h3 .disco-line {
+    bottom: -20px;
+  }
+  .story-section .story-content-wrapper .story-content p:nth-of-type(1) {
+    padding-top: 30px;
+  }
+  .cocktail-item h6 {
+    font-size: 14px !important;
+  }
+  .purchase-btn {
+    font-size: 14px;
+  }
+  .stockist-section .stor-stock-item .stock-details .stock-single a {
+    font-size: 14px;
+  }
+  .stock-header h5 {
+    font-size: 24px;
+  }
+}

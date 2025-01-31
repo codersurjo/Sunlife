@@ -1,0 +1,36 @@
+// 1180px
+@include xlg-xxlg {
+  // landing page start
+  @include landing-xlg-xxlg;
+  // landing page end
+}
+// 1024px
+@include lg-xlg {
+  // landing page start
+  @include landing-lg-xlg;
+  // landing page end
+  // shop page start
+  @include shop-lg-xlg;
+  @include hat-lg-xlg;
+
+  // shop page end
+}
+// 840px
+@include md-lg {
+  // shop page start
+  @include shop-md-lg;
+  // shop page end
+}
+// 700px
+@include sm-md {
+  // shop page start
+  @include shop-sm-md;
+  @include hat-sm-md;
+  // shop page end
+}
+// 540px
+@include xsm-sm {
+  // landing page start
+  @include landing-xsm-sm;
+  // landing page end
+}
